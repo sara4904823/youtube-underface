@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone (Responsive)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header / Top Navbar -->
+  <header class="header">
+    <div class="header-left">
+      <i class="fa-solid fa-bars menu-icon"></i>
+      <div class="logo">
+        <i class="fa-brands fa-youtube"></i> YouTube
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input"/>
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <button class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+    </div>
+
+    <div class="header-right">
+      <i class="fa-solid fa-video"></i>
+      <i class="fa-solid fa-bell"></i>
+      <img src="https://via.placeholder.com/32" alt="Profile" class="profile-pic"/>
+    </div>
+  </header>
+
+  <!-- Sidebar (hidden on mobile) -->
+  <aside class="sidebar">
+    <div class="sidebar-item active"><i class="fa-solid fa-house"></i> Home</div>
+    <div class="sidebar-item"><i class="fa-solid fa-compass"></i> Explore</div>
+    <div class="sidebar-item"><i class="fa-solid fa-play"></i> Shorts</div>
+    <div class="sidebar-item"><i class="fa-solid fa-folder"></i> Subscriptions</div>
+    <hr/>
+    <div class="sidebar-item"><i class="fa-solid fa-video"></i> Library</div>
+    <div class="sidebar-item"><i class="fa-solid fa-clock"></i> History</div>
+    <div class="sidebar-item"><i class="fa-solid fa-thumbs-up"></i> Liked videos</div>
+    <div class="sidebar-item"><i class="fa-solid fa-list"></i> Your videos</div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Categories (chips) -->
+    <div class="categories">
+      <button class="category active">All</button>
+      <button class="category">Gaming</button>
+      <button class="category">Music</button>
+      <button class="category">Live</button>
+      <button class="category">Mixes</button>
+      <button class="category">News</button>
+      <button class="category">Comedy</button>
+    </div>
+
+    <!-- Video grid -->
+    <div class="video-grid">
+      <!-- Video card (repeated 12 times for demo) -->
+      <div class="video-card">
+        <div class="thumbnail">
+          <img src="https://picsum.photos/320/180?random=1" alt="Video"/>
+          <span class="duration">12:45</span>
+        </div>
+        <div class="video-info">
+          <img src="https://via.placeholder.com/36" alt="Channel" class="channel-avatar"/>
+          <div class="details">
+            <h3 class="title">Amazing Travel Destinations 2025</h3>
+            <p class="channel-name">Travel With Me</p>
+            <p class="views-time">1.2M views • 3 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <div class="thumbnail">
+          <img src="https://picsum.photos/320/180?random=2" alt="Video"/>
+          <span class="duration">8:22</span>
+        </div>
+        <div class="video-info">
+          <img src="https://via.placeholder.com/36" alt="Channel" class="channel-avatar"/>
+          <div class="details">
+            <h3 class="title">Learn CSS Grid in 20 Minutes</h3>
+            <p class="channel-name">Web Dev Simplified</p>
+            <p class="views-time">890K views • 1 week ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add 10 more similar .video-card blocks here if you want more videos -->
+      <!-- For brevity I show only 2 – duplicate them as needed -->
+
+      <div class="video-card">
+        <div class="thumbnail">
+          <img src="https://picsum.photos/320/180?random=3" alt="Video"/>
+          <span class="duration">15:10</span>
+        </div>
+        <div class="video-info">
+          <img src="https://via.placeholder.com/36" alt="Channel" class="channel-avatar"/>
+          <div class="details">
+            <h3 class="title">Best Gaming PC Build 2025</h3>
+            <p class="channel-name">TechBit</p>
+            <p class="views-time">450K views • 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ... duplicate more cards ... -->
+    </div>
+  </main>
+
+</body>
+</html>
